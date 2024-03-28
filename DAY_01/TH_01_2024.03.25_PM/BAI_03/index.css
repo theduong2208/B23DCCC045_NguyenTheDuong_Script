@@ -1,0 +1,31 @@
+.iphone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+}
+.box{
+    padding: 50px;
+    border: 2px solid;
+    
+}
+.i{
+    display: flex;
+    justify-content: center;
+}
+.i1{
+    color: rgb(231, 231, 46);
+    font-weight: bold;
+    font-size: 20px;
+}
+.i2{
+    color:rgb(227, 83, 51);
+    font-size: 30px;
+}
+.i:hover{
+    color: black;
+}
+.box:hover{
+    color:coral;
+}
+

@@ -1,0 +1,70 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+.check{
+    display: flex;
+    font-size: 20px;
+}
+.mess{
+    display: flex;
+    position: relative;
+    font-size: 20px;
+}
+.message{
+    background-color: rgb(201, 192, 192);
+    width: 130px;
+    height: 30px;
+    border-radius: 999px ;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    border: 1px solid;
+}
+.sale{
+    margin-top: 10px;
+    font-size: 16px;
+}
+.text{
+    font-size: 7px;
+    position: relative;
+    left: 12px;
+}
+.contain{
+    display: flex;
+    justify-content: center;
+    background-color: #e9e0e0;
+}
+.img{
+    display: flex;
+    position: relative;
+    top: 4px;
+    left: 5px;
+}
+.online,.text{
+    position: relative;
+    bottom: 20px;
+    left: 10px;
+}
+i{
+    padding: 10px;
+    color:rgb(64, 24, 222)
+}
+.phone{
+    width: 30px;
+    padding: 10px
+}
+.i{
+    padding: 10px;
+}
+.mail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.a:hover{
+    color:rgb(29, 65, 223);
+    text-decoration: underline;
+}
+
