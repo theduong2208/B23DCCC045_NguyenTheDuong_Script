@@ -67,4 +67,8 @@ i{
     color:rgb(29, 65, 223);
     text-decoration: underline;
 }
+.message:hover{
+    color:rgb(29, 65, 223);
+    border-color:black;
+}
 
