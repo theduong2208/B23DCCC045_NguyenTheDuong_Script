@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let M=[];
+        let n;
+        while(true){
+            n=Number(prompt('Nhap vao so phan tu cua mang:'));
+            if(Number.isInteger(n) && n>0){
+                break;
+            }
+        }
+        while(M.length<n){
+            s=Number(prompt('nhap vao phan tu cua mang:'))
+            if(Number.isInteger(s)){
+                M.push(s)
+            }
+        }
+         // sap xep theo thu tu tang dan
+        let sorted  =M.sort((a,b)=> a-b)       
+        document.write(sorted,'<br>');
+
+        // loai bo cac phan tu trung nhau, moi phan tu chi xuat hien 1 lan
+        
+        function filterArr(a){
+            for(let i=0;i<a.length;i++){
+                for(let n=i+1;n<=a.length-1;n++){
+                    if(a[i]===a[n]){
+                        a.splice(n, 1)
+                    }
+                }
+            }
+            return a
+        }
+        document.write(filterArr(M));
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let M=[];
+        let n;
+        while(true){
+            n=Number(prompt('Nhap vao so phan tu cua mang:'));
+            if(Number.isInteger(n) && n>0){
+                break;
+            }
+        }
+        while(M.length<n){
+            s=Number(prompt('nhap vao phan tu cua mang:'));
+            if(Number.isInteger(s)){
+                M.push(s);
+            }
+        }
+        document.write(M,'<br>');
+        
+        // tim max
+
+        let number=Math.max(...M);
+        document.write(number,'<br>');
+        
+        // tim so chinh phuong
+        
+        let sqrtNumber=M.filter(
+            (a) => Number.isInteger(Math.sqrt(a))
+        );
+        document.write(sqrtNumber,'<br>');
+        
+        // so lon hon trung binh cong
+
+        let total=M.reduce(
+            (a,b)=>a+b
+        );
+        let sumTotal=total/(M.length);
+        let compare=M.filter(
+            (a) => a>sumTotal
+        )
+        document.write(compare,'<br>');
+
+        // tinh trung binh cong cua cac so khong am
+        
+        let M1=M.filter(
+            (a) => a>0
+        );
+        let totalM1=M1.reduce(
+            (a,b) => a+b
+        );
+        document.write(totalM1);
+        
+    </script>
+</body>
+</html>
