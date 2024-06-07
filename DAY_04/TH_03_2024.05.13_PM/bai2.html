@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <div>List Items</div>
+    <ul>
+        <li>Iphone 11</li>
+        <li>Iphone 12</li>
+        <li>Iphone 13</li>
+    </ul>
+    <input  placeholder="New Item" type="text" value="">
+    <button type="button">Add</button>
+</body>
+<script>
+    
+    $('button[type="button"]').on('click', function(){
+        if($('input[type="text"]').val().trim()!==''){
+            $('ul').append('<li>'+$('input[type="text"]').val() +'</li>')
+            $('input[type="text"]').val('')
+        }
+        else{
+            alert("hãy thêm giá trị vào")
+        }
+    })
+</script>
+</html>
